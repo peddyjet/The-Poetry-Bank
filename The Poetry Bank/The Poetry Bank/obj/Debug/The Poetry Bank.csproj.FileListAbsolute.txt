@@ -1,0 +1,10 @@
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\bin\Debug\The Poetry Bank.exe.config
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\bin\Debug\The Poetry Bank.exe
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\bin\Debug\The Poetry Bank.pdb
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The Poetry Bank.csprojAssemblyReference.cache
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The_Poetry_Bank.LandingPage.resources
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The_Poetry_Bank.Properties.Resources.resources
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The Poetry Bank.csproj.GenerateResource.cache
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The Poetry Bank.csproj.CoreCompileInputs.cache
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The Poetry Bank.exe
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The Poetry Bank.pdb
