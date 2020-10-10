@@ -17,11 +17,18 @@ namespace The_Poetry_Bank
         [STAThread]
         static void Main()
         {
-            Caches.Setup(ORIGIN_PATH);
+           string result = Caches.Setup(ORIGIN_PATH);
+           if (result != string.Empty) { Failiure(result); }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LandingPage());
+        }
+
+        private static void Failiure(string msg)
+        {
+            MessageBox.Show($"A fatal error has occured: {msg}", "Fatal Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Application.Exit();
         }
     }
 }

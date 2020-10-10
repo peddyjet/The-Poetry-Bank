@@ -11,3 +11,4 @@ D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\
 D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\bin\Debug\en-GB\The Poetry Bank.resources.dll
 D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The_Poetry_Bank.LandingPage.en-GB.resources
 D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\en-GB\The Poetry Bank.resources.dll
+D:\Users\lewis\Desktop\X1 Tools\The-Poetry-Bank\The Poetry Bank\The Poetry Bank\obj\Debug\The_Poetry_Bank.PoemViewer.resources

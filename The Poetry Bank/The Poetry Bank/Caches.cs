@@ -13,29 +13,35 @@ namespace The_Poetry_Bank
         public static List<Poem> Poems { get; private set; } = new List<Poem>();
         public static string MainText { get; private set; }
 
-        public static bool Setup(string url)
-        {
-            WebClient webClient = new WebClient();
+        public static string Setup(string url)
+        { 
             try
             {
-               MainText = webClient.DownloadString(url);  
+                WebClient webClient = new WebClient();
+
+                MainText = webClient.DownloadString(url);
+
+                //Name, UrlForDescription, UrlForMainBody
+
+                string[] entries = MainText.Split(',');
+                if (entries.Length % 3 != 0) { return "Lewis has messed up the code: please email him at: support@x1.games"; }
+
+                for (int i = 0; i < entries.Length - 1; i += 3)
+                {
+                    string descriptionRaw = webClient.DownloadString(entries[i + 1]);
+                    string mainRaw = webClient.DownloadString(entries[i + 2]);
+
+                    string description = descriptionRaw.Replace(@"â€™", @"'");
+                    string main = mainRaw.Replace(@"â€™", @"'");
+
+                    Poems.Add(new Poem(entries[i], description , main ));
+                }
             }
-            catch { return false; }
-
-            //Name, UrlForDescription, UrlForMainBody
-
-            string[] entries = MainText.Split(',');
-            if ((entries.Length - 1) % 3 != 0) { return false; }
-
-            for (int i = 0; i < entries.Length - 1; i += 3)
-            {
-                Poems.Add(new Poem(entries[i], webClient.DownloadString(entries[i + 1]), webClient.DownloadString(entries[i + 2])));
-            }
-
-            return true;
+            catch(Exception e) { return e.ToString(); }
+            return string.Empty;
         }
    }
-
+    // â€™
 
 }
 

@@ -45,17 +45,19 @@
             // 
             // ListOfPoems
             // 
-            resources.ApplyResources(this.ListOfPoems, "ListOfPoems");
             this.ListOfPoems.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.ListOfPoems, "ListOfPoems");
             this.ListOfPoems.FormattingEnabled = true;
             this.ListOfPoems.Name = "ListOfPoems";
+            this.ListOfPoems.Click += new System.EventHandler(this.ListOfPoems_Click);
+            this.ListOfPoems.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ListOfPoems_Click);
             // 
             // Main
             // 
-            resources.ApplyResources(this.Main, "Main");
             this.Main.Controls.Add(this.ButtonArea);
             this.Main.Controls.Add(this.Title);
             this.Main.Controls.Add(this.Info);
+            resources.ApplyResources(this.Main, "Main");
             this.Main.Name = "Main";
             // 
             // ButtonArea
@@ -71,18 +73,21 @@
             resources.ApplyResources(this.ReadPoem, "ReadPoem");
             this.ReadPoem.Name = "ReadPoem";
             this.ReadPoem.UseVisualStyleBackColor = true;
+            this.ReadPoem.Click += new System.EventHandler(this.ReadPoem_Click);
             // 
             // RatePoem
             // 
             resources.ApplyResources(this.RatePoem, "RatePoem");
             this.RatePoem.Name = "RatePoem";
             this.RatePoem.UseVisualStyleBackColor = true;
+            this.RatePoem.Click += new System.EventHandler(this.RatePoem_Click);
             // 
             // DownloadPoem
             // 
             resources.ApplyResources(this.DownloadPoem, "DownloadPoem");
             this.DownloadPoem.Name = "DownloadPoem";
             this.DownloadPoem.UseVisualStyleBackColor = true;
+            this.DownloadPoem.Click += new System.EventHandler(this.DownloadPoem_Click);
             // 
             // Title
             // 
@@ -91,8 +96,8 @@
             // 
             // Info
             // 
-            resources.ApplyResources(this.Info, "Info");
             this.Info.Controls.Add(this.PoemInfo);
+            resources.ApplyResources(this.Info, "Info");
             this.Info.Name = "Info";
             this.Info.TabStop = false;
             // 
@@ -114,7 +119,6 @@
             this.ButtonArea.ResumeLayout(false);
             this.Info.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
