@@ -20,13 +20,13 @@ namespace The_Poetry_Bank
             InitializeComponent();
 
           Title.Text = poem.name;
-          Poem.Text = poem.fullPoem;
+          poem2.Text = poem.fullPoem;
         }
 
         public void UpdateMe()
         {
             Title.Text = poem.name;
-            Poem.Text = poem.fullPoem;
+            poem2.Text = poem.fullPoem;
         }
     }
 }

@@ -34,6 +34,11 @@ namespace The_Poetry_Bank
                     string description = descriptionRaw.Replace(@"â€™", @"'");
                     string main = mainRaw.Replace(@"â€™", @"'");
 
+                    description = description.Replace(@"â€œ", '"'.ToString());
+                    main = main.Replace(@"â€œ", '"'.ToString());
+                    description = description.Replace(@"â€", '"'.ToString());
+                    main = main.Replace(@"â€", '"'.ToString());
+
                     Poems.Add(new Poem(entries[i], description , main ));
                 }
             }

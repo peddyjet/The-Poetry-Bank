@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PoemViewer));
             this.Title = new System.Windows.Forms.Label();
-            this.Poem = new System.Windows.Forms.Label();
+            this.poem2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Title
@@ -45,21 +45,23 @@
             this.Title.TabIndex = 0;
             this.Title.Text = "A Poem";
             // 
-            // Poem
+            // poem2
             // 
-            this.Poem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Poem.Location = new System.Drawing.Point(12, 34);
-            this.Poem.Name = "Poem";
-            this.Poem.Size = new System.Drawing.Size(693, 589);
-            this.Poem.TabIndex = 1;
-            this.Poem.Text = "This is the poem";
+            this.poem2.AutoSize = true;
+            this.poem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poem2.Location = new System.Drawing.Point(12, 62);
+            this.poem2.Name = "poem2";
+            this.poem2.Size = new System.Drawing.Size(46, 18);
+            this.poem2.TabIndex = 1;
+            this.poem2.Text = "label1";
             // 
             // PoemViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(717, 634);
-            this.Controls.Add(this.Poem);
+            this.Controls.Add(this.poem2);
             this.Controls.Add(this.Title);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PoemViewer";
@@ -72,6 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.Label Poem;
+        private System.Windows.Forms.Label poem2;
     }
 }
