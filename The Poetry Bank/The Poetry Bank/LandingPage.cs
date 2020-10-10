@@ -15,6 +15,12 @@ namespace The_Poetry_Bank
         public LandingPage()
         {
             InitializeComponent();
+
+            foreach (Poem poem in Caches.Poems)
+            {
+                ListOfPoems.Items.Add(poem);
+            }
+            
         }
 
       

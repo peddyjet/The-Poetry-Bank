@@ -11,9 +11,14 @@ namespace The_Poetry_Bank
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+
+        const string ORIGIN_PATH = @"https://raw.githubusercontent.com/lewisjet/The-Poetry-Bank/master/Links";
+
         [STAThread]
         static void Main()
         {
+            Caches.Setup(ORIGIN_PATH);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LandingPage());
